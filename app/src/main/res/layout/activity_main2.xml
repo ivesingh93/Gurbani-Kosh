@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/four"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/word_to_search"
+            android:layout_width="162dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="188dp"
+            android:layout_toLeftOf="@+id/search"
+            android:drawableRight="@drawable/search"
+            android:ems="5"
+            android:hint="Enter Word"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="18dp"
+            android:layout_weight="1">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/word_to_search"
+            android:text="Kosh Search"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/search"
+            android:text="Note: Install and enable Gurmukhi Keyboard to type in Punjabi else type in English using the image shown above."
+            android:textColor="#FFFFFF"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:text="Medium Text"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+       >
+
+        <ImageButton
+            android:id="@+id/apps"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/link"
+            android:layout_marginRight="30px"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/android" />
+
+        <ImageButton
+            android:id="@+id/rate"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"
+            android:layout_alignTop="@+id/jankari"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rate" />
+
+        <ImageButton
+            android:id="@+id/jankari"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/search"
+            android:layout_marginRight="30px"
+            android:layout_alignTop="@+id/facebook"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/jankari" />
+
+        <ImageButton
+            android:id="@+id/facebook"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/apps"
+            android:layout_marginRight="30px"
+            android:layout_toRightOf="@+id/link"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/facebook" />
+
+        <ImageButton
+
+            android:textAllCaps="false"
+            android:text="Hide Image"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="30px"
+            android:layout_marginLeft="20px"
+            android:id="@+id/hide_image"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:src="@drawable/minimize"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>
